@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		91D2BC0C1FB85068000E910F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC0B1FB85068000E910F /* AppDelegate.swift */; };
-		91D2BC0E1FB85068000E910F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC0D1FB85068000E910F /* ViewController.swift */; };
+		91D2BC0E1FB85068000E910F /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC0D1FB85068000E910F /* AddExpenseViewController.swift */; };
 		91D2BC111FB85068000E910F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D2BC0F1FB85068000E910F /* Main.storyboard */; };
 		91D2BC131FB85068000E910F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91D2BC121FB85068000E910F /* Assets.xcassets */; };
 		91D2BC161FB85068000E910F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91D2BC141FB85068000E910F /* LaunchScreen.storyboard */; };
+		91D2BC231FB853B4000E910F /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC221FB853B4000E910F /* Expenses.swift */; };
+		91D2BC251FB85464000E910F /* DetailExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC241FB85464000E910F /* DetailExpensesViewController.swift */; };
+		91D2BC281FB8582D000E910F /* CustomExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2BC261FB8582D000E910F /* CustomExpenseCell.swift */; };
+		91D2BC291FB8582D000E910F /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91D2BC271FB8582D000E910F /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91D2BC081FB85068000E910F /* MyMoneyJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoneyJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D2BC0B1FB85068000E910F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91D2BC0D1FB85068000E910F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91D2BC0D1FB85068000E910F /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		91D2BC101FB85068000E910F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91D2BC121FB85068000E910F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91D2BC151FB85068000E910F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91D2BC171FB85068000E910F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91D2BC221FB853B4000E910F /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		91D2BC241FB85464000E910F /* DetailExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExpensesViewController.swift; sourceTree = "<group>"; };
+		91D2BC261FB8582D000E910F /* CustomExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExpenseCell.swift; sourceTree = "<group>"; };
+		91D2BC271FB8582D000E910F /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		91D2BC0A1FB85068000E910F /* MyMoneyJournal */ = {
 			isa = PBXGroup;
 			children = (
-				91D2BC0B1FB85068000E910F /* AppDelegate.swift */,
-				91D2BC0D1FB85068000E910F /* ViewController.swift */,
-				91D2BC0F1FB85068000E910F /* Main.storyboard */,
-				91D2BC121FB85068000E910F /* Assets.xcassets */,
-				91D2BC141FB85068000E910F /* LaunchScreen.storyboard */,
+				91D2BC1D1FB8515E000E910F /* Model */,
+				91D2BC1F1FB851EE000E910F /* View */,
+				91D2BC201FB851F6000E910F /* Controller */,
+				91D2BC211FB8526D000E910F /* Others */,
 				91D2BC171FB85068000E910F /* Info.plist */,
 			);
 			path = MyMoneyJournal;
+			sourceTree = "<group>";
+		};
+		91D2BC1D1FB8515E000E910F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91D2BC221FB853B4000E910F /* Expenses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91D2BC1F1FB851EE000E910F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91D2BC0F1FB85068000E910F /* Main.storyboard */,
+				91D2BC141FB85068000E910F /* LaunchScreen.storyboard */,
+				91D2BC261FB8582D000E910F /* CustomExpenseCell.swift */,
+				91D2BC271FB8582D000E910F /* CustomCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91D2BC201FB851F6000E910F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91D2BC0D1FB85068000E910F /* AddExpenseViewController.swift */,
+				91D2BC241FB85464000E910F /* DetailExpensesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91D2BC211FB8526D000E910F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				91D2BC0B1FB85068000E910F /* AppDelegate.swift */,
+				91D2BC121FB85068000E910F /* Assets.xcassets */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			files = (
 				91D2BC161FB85068000E910F /* LaunchScreen.storyboard in Resources */,
 				91D2BC131FB85068000E910F /* Assets.xcassets in Resources */,
+				91D2BC291FB8582D000E910F /* CustomCell.xib in Resources */,
 				91D2BC111FB85068000E910F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91D2BC0E1FB85068000E910F /* ViewController.swift in Sources */,
+				91D2BC231FB853B4000E910F /* Expenses.swift in Sources */,
+				91D2BC0E1FB85068000E910F /* AddExpenseViewController.swift in Sources */,
+				91D2BC281FB8582D000E910F /* CustomExpenseCell.swift in Sources */,
+				91D2BC251FB85464000E910F /* DetailExpensesViewController.swift in Sources */,
 				91D2BC0C1FB85068000E910F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
